@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [fem-interactive-rating-component](https://github.com/00Wyatt/fem-interactive-rating-component)
+- Live Site URL: [Frontend Mentor | Interactive rating component](https://00wyatt.github.io/fem-interactive-rating-component/)
 
 ## My process
 
