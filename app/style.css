@@ -94,7 +94,7 @@ a:active {
     place-items: center;
 }
 
-.card__text h2 {
+.card__text h1 {
     color: var(--white);
     margin-bottom: 8px;
     font-size: 1.5625rem; /* 25px */
@@ -179,7 +179,7 @@ a:active {
         gap: 28px;
     }
 
-    .card__text h2 {
+    .card__text h1 {
         font-size: 1.75rem; /* 28px */
     }
 

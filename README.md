@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [fem-interactive-rating-component](https://github.com/00Wyatt/fem-interactive-rating-component)
+- Solution URL: [Interactive Rating Component using CSS-Grid](https://www.frontendmentor.io/solutions/interactive-rating-component-using-cssgrid-AWF1mkzz47)
 - Live Site URL: [Frontend Mentor | Interactive rating component](https://00wyatt.github.io/fem-interactive-rating-component/)
 
 ## My process
