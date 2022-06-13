@@ -1,0 +1,209 @@
+/* CSS Custom Properties */
+:root {
+    /* Colors
+    Primary */
+    --orange: hsl(25, 97%, 53%);
+
+    /* Neutral */
+
+    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-grey: hsl(216, 12%, 54%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+}
+
+/* Boilerplate styles */
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    background: var(--very-dark-blue);
+    min-height: 100vh;
+    margin: 0;
+    color: var(--light-grey);
+    font-family: "Overpass", sans-serif;
+    font-size: 0.875rem; /* 14px */
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+a,
+a:visited,
+a:active {
+    text-decoration: none;
+}
+
+.attribution {
+    font-size: 0.6875rem; /* 11px */
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* Main styles */
+.flex-container {
+    min-height: 100vh;
+    padding: 0 25px;
+    display: grid;
+    place-items: center;
+}
+.card {
+    background: radial-gradient(circle at top, var(--dark-blue) 1%, var(--very-dark-blue) 140%);
+    max-width: 25rem; /* 400px */
+    min-height: 360px;
+    padding: 20px 25px;
+    border-radius: 25px;
+    display: grid;
+    align-content: center;
+}
+
+.card__layout {
+    display: grid;
+    gap: 24px;
+}
+
+.card__thank-you-state {
+    text-align: center;
+}
+
+.card__star {
+    background: var(--dark-blue);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    padding-left: 2px; /* Centering the Star slighlty more */
+    display: grid;
+    place-items: center;
+}
+
+.card__text h2 {
+    color: var(--white);
+    margin-bottom: 8px;
+    font-size: 1.5625rem; /* 25px */
+    font-weight: 400;
+}
+
+.card__text p {
+    line-height: 1.4;
+}
+
+.card__numbers {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card__number {
+    background: var(--dark-blue);
+    width: 45px;
+    height: 45px;
+    padding: 4px 0 0 1px; /* There must be a better way to center them? */
+    border-radius: 50%;
+    font-size: 1rem; /* 16px */
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+    transition: background-color 150ms ease-in-out, color 150ms ease-in-out;
+}
+
+.card__number:hover {
+    background: var(--orange);
+    color: var(--white);
+}
+
+.card__submit {
+    background: var(--orange);
+    color: var(--white);
+    padding: 15px;
+    border: none;
+    border-radius: 25px;
+    font-size: 0.75rem; /* 12px */
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    cursor: pointer;
+    transition: background-color 150ms ease-in-out, color 150ms ease-in-out;
+}
+
+.card__submit:hover {
+    background: var(--white);
+    color: var(--orange);
+}
+
+.card__image {
+    justify-self: center;
+}
+
+.card__selection {
+    background: var(--dark-blue);
+    color: var(--orange);
+    padding: 9px 11px 5px;
+    border-radius: 25px;
+    justify-self: center;
+}
+
+.selected {
+    background: var(--medium-grey);
+    color: var(--white);
+}
+
+.hide {
+    display: none;
+}
+
+/* Tablet and desktop styles */
+@media all and (min-width: 27.5em) { /* 440px */
+    .card {
+        min-height: 410px;
+        padding: 20px 30px;
+    }
+
+    .card__layout {
+        gap: 28px;
+    }
+
+    .card__text h2 {
+        font-size: 1.75rem; /* 28px */
+    }
+
+    .card__text p {
+        font-size: 0.9375rem; /* 15px */
+        line-height: 1.5;
+    }
+
+    .card__star {
+        width: 50px;
+        height: 50px;
+    }
+
+    .card__number {
+        width: 50px;
+        height: 50px;
+    }
+
+    .card__submit {
+        padding: 16px;
+        font-size: 0.8125rem; /* 14px */
+    }
+
+    .card__selection {
+        padding: 9px 17px 5px;
+    }
+}
